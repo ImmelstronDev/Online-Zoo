@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>online-zoo</title>
-
+    <link rel="stylesheet" href="main.css">
 
 </head>
-<body>
+<body class="body-page">
 <div class="main-page" >
     <header class="header">
-        <div class="site-logo"> 
+        <div class="site-logo-container"> 
             <a class="header-logo" href="#"><img class="site-logo-img" src=".\img\site-logo.png" alt="label"></a>
             <nav class="header-nav">
-                <ul>
+                <ul class="header-nav-list">
                     <li class="header-nav-item"><a class="header-nav-link" href="#">About</a></li>
                     <li class="header-nav-item"><a class="header-nav-link" href="">Map</a></li>
                     <li class="header-nav-item"><a class="header-nav-link" href="">Zoos</a></li>
@@ -27,17 +27,18 @@
     </header>
 
 
-    <section class="first-page">
-        <img class="background-img" src=".\img\background-panda.jpg" alt="panda">
-        <div class="components-first-page">
-            <p>WATCH YOUR <span class="color-for-favorite">FAVORITE</span> ANIMAL ONLINE</p>
-            <button class="long-button">WATCH ONLINE</button>
+    <section class="Watch-your-favorite-animal-online">
+        <!-- <img class="background-img" src=".\img\background-panda.jpg" alt="panda"> -->
+        <div class="preview">
+            <div class="circle"></div>
+            <h1 class="h1-title">WATCH <br> YOUR  <br><span class="color-for-favorite">FAVORITE</span> <br> ANIMAL <br> ONLINE</h1>
+            <button class="long-button-1">WATCH ONLINE</button>
         </div>
     </section>
 
 
-    <section class="second-page">
-        <div class="second-page-warpper">
+    <section class="The-Backstage">
+        <div class="The-Backstage-warpper">
             <div class="warpper-from-bamboo-cap">
                 <img src=".\img\bamboo-cap.png" alt="bamboo-cap">
             </div>
@@ -51,10 +52,12 @@
     </section>
 
 
-    <section class="pets-list">
+    <section class="pets">
         <div class="warpper-pets">
+            <div class="container-pets">
             <div class="button-left">
-                <button class="button-pets-left"><img src=".\img\arrow-left.svg" alt="arrow-left"></button>
+               
+                <button class="button-pets-left"> <img src=".\img\arrow-left.svg" alt="arrow-left"></button>
             </div>
             <div class="container-with-pets">
                 <div class="pet-card">
@@ -126,41 +129,43 @@
             <div class="button-right">
                 <button class="button-pets-left"><img src=".\img\arrow-right.svg" alt="arrow-right"></button>
             </div>
+        </div>
             <div class="pet-choose-button">
-                <button class="long-buttton">CHOOSE YOUR FAVORITE</button>
+                <button class="long-button-2">CHOOSE YOUR FAVORITE</button>
             </div>
+        
         </div>
 
     </section>
 
 
-    <section class="pay-insruction">
+    <section class="Pick-and-feed-a-friend">
         <div class="instruction-warpper">
             <div class="instruction-text">
                 <h2 class="title-h2-for-instruction">Pick and feed a friend</h2>
                 <p class="text-about-joy">We know the animals bring you joy, and in these extraordinary times, we're glad.</p>
                 <p class="text-about-covid">During a time when the COVID-19 epidemic is touching all of our lives, we're proud and glad that people around the world find joy in PetStory.</p>
-                <p class="text-about-help">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider a gift to our <a href=".\donate.html">Emergency Support Fund</a>. </p>
+                <p class="text-about-help">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider <br> a gift to our <a href=".\donate.html">Emergency Support Fund</a>. </p>
             </div>
             <div class="instruction-for-pay">
-                <div class="title-h3-container"><h3 class="title-h3">How it works</h3></div>
+                <div class="title-h3-container"><h3 class="title-h3-instruction">How it works</h3></div>
                 <div class="instruction-in-cheme">
                     <div class="instruction-box">
                         <div class="instruction-img"><img src=".\img\instruction-1.svg" alt=""></div>
                         <div class="instruction-discription"><p class="pay-text">Pay with card</p></div>
                     </div>
-                    <div class="instruction-box"><img src=".\img\fat-arrow.svg" alt=""></div>
+                    <div class="instruction-box-arrow"><img src=".\img\fat-arrow.svg" alt=""></div>
                     <div class="instruction-box">
                         <div class="instruction-img"><img src=".\img\instruction-2.svg" alt=""></div>
-                        <div class="instruction-discription"><p class="pay-text">Payment goes to the zoo</p></div>
+                        <div class="instruction-discription"><p class="pay-text">Payment goes to the <br> zoo</p></div>
                     </div>
-                    <div class="instruction-box"><img src=".\img\fat-arrow.svg" alt=""></div>
+                    <div class="instruction-box-arrow"><img src=".\img\fat-arrow.svg" alt=""></div>
                     <div class="instruction-box">
                         <div class="instruction-img"><img src=".\img\instruction-3.svg" alt=""></div>
-                        <div class="instruction-discription"><p class="pay-text">Your favorite animal gets delicious dish</p></div>
+                        <div class="instruction-discription"><p class="pay-text">Your favorite animal <br> gets delicious dish</p></div>
                     </div>
                 </div>
-                <div class="button-to-donate"><button class="long-button">Feed a friend now</button></div>
+                <div class="button-to-donate"><div class="button-donate-wrapper"><a href="./donate.html" class="long-button-donate">Feed a friend now</a></div></div>
             </div>
         </div>
     </section>
@@ -168,7 +173,7 @@
 
     <section class="testimonials">
         <div class="testimonials-warpper">
-            <h3 class="title-h3">Testimonials</h3>
+            <h3 class="title-h3-testimonials">Testimonials</h3>
             <div class="testimonials-conteiner">
 
                 <div class="testimonial-card">
@@ -235,11 +240,11 @@
 
             <div class="scroll">
                 <div class="scroll-warpper">
-                    <div class="testimonial-scroll"></div>
+                    <input class="scroll-body" type="range" value="0" min="0" max="100">
                 </div>
             </div>
 
-            <button class="button-feedback">LEAVE FEEDBACK</button>
+            <div class="button-feedback-body"><a class="button-feedback">LEAVE FEEDBACK</a></div>
         </div>
     </section>
 
@@ -249,11 +254,11 @@
                 <a class="footer-logo" href="#"><img class="site-logo-img" src=".\img\site-logo.png" alt="label"></a>
                 <form class="subscribe-form">
                     <div class="subscribe-title">Subscribe to our news</div>
-                    <div class="row-to-input"><input type="email" class="subscribe-gorm-input" placeholder="Enter your email"><button class="button-to-subscribe">SUBSCRIBE</button></div>
+                    <div class="row-to-input"><input type="email" class="subscribe-gorm-input" placeholder="Enter your email"><button class="button-to-subscribe">Submit</button></div>
                 </form>
             </div>
 
-            <div class="footer-mid"><a href=".\donate.html"><button class="button-for-donate">DONATE FOR VOLUNTEERS</button></a></div>
+            <div class="footer-mid"><a class="button-for-donate" href=".\donate.html">DONATE FOR VOLUNTEERS</a></div>
 
             <div class="footer-bot">
                 <ul class="link-list">
