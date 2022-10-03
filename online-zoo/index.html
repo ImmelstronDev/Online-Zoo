@@ -14,11 +14,16 @@
         <div class="site-logo-container"> 
             <a class="header-logo" href="#"><img class="site-logo-img" src=".\img\site-logo.png" alt="label"></a>
             <nav class="header-nav">
+                <div  class="burger" ><input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                      <span></span>
+                    </label>
+                </div>
                 <ul class="header-nav-list">
                     <li class="header-nav-item"><a class="header-nav-link" href="#">About</a></li>
                     <li class="header-nav-item"><a class="header-nav-link" href="">Map</a></li>
                     <li class="header-nav-item"><a class="header-nav-link" href="">Zoos</a></li>
-                    <li class="header-nav-item"><a class="header-nav-link" href=".\donate.html">Donate</a></li>
+                    <li class="header-nav-item invisible_1000"><a class="header-nav-link" href=".\donate.html">Donate</a></li>
                     <li class="header-nav-item"><a class="header-nav-link" href="">Contact us</a></li>
                 </ul>
             </nav>
@@ -28,7 +33,7 @@
 
 
     <section class="Watch-your-favorite-animal-online">
-        <!-- <img class="background-img" src=".\img\background-panda.jpg" alt="panda"> -->
+       
         <div class="preview">
             <div class="circle"></div>
             <h1 class="h1-title">WATCH <br> YOUR  <br><span class="color-for-favorite">FAVORITE</span> <br> ANIMAL <br> ONLINE</h1>
@@ -61,7 +66,7 @@
             </div>
             <div class="container-with-pets">
                 <div class="pet-card">
-                    <div class="pet-img"><img src=".\img\giant-pandas.png" alt="giant pandas"></div>
+                    <div class="pet-img"><img src=".\img\giant-pandas.png" alt="giant pandas" class="pet-image"></div>
                     <div class="pet-discription">
                         <div class="pet-info">
                             <div class="pet-name">GIANT PANDAS</div>
@@ -72,7 +77,7 @@
                 </div>
 
                 <div class="pet-card">
-                    <div class="pet-img"><img src=".\img\eagles.png" alt="eagles"></div>
+                    <div class="pet-img"><img src=".\img\eagles.png" alt="eagles" class="pet-image"></div>
                     <div class="pet-discription">
                         <div class="pet-info">
                             <div class="pet-name">EAGLES</div>
@@ -83,7 +88,7 @@
                 </div>
 
                 <div class="pet-card">
-                    <div class="pet-img"><img src=".\img\gorillas.png" alt=""></div>
+                    <div class="pet-img"><img src=".\img\gorillas.png" alt="" class="pet-image"></div>
                     <div class="pet-discription">
                         <div class="pet-info">
                             <div class="pet-name">GORILLAS</div>
@@ -94,7 +99,7 @@
                 </div>
 
                 <div class="pet-card">
-                    <div class="pet-img"><img src=".\img\two-toed-sloth.png" alt=""></div>
+                    <div class="pet-img"><img src=".\img\two-toed-sloth.png" alt="" class="pet-image"></div>
                     <div class="pet-discription">
                         <div class="pet-info">
                             <div class="pet-name">Two-toed Sloth</div>
@@ -105,7 +110,7 @@
                 </div>
 
                 <div class="pet-card">
-                    <div class="pet-img"><img src=".\img\cheetahs.png" alt=""></div>
+                    <div class="pet-img"><img src=".\img\cheetahs.png" alt="" class="pet-image"></div>
                     <div class="pet-discription">
                         <div class="pet-info">
                             <div class="pet-name">CHEETAHS</div>
@@ -116,7 +121,7 @@
                 </div>
 
                 <div class="pet-card">
-                    <div class="pet-img"><img src=".\img\penguins.png" alt=""></div>
+                    <div class="pet-img"><img src=".\img\penguins.png" alt="" class="pet-image"></div>
                     <div class="pet-discription">
                         <div class="pet-info">
                             <div class="pet-name">PENGUINS</div>
@@ -145,7 +150,7 @@
                 <h2 class="title-h2-for-instruction">Pick and feed a friend</h2>
                 <p class="text-about-joy">We know the animals bring you joy, and in these extraordinary times, we're glad.</p>
                 <p class="text-about-covid">During a time when the COVID-19 epidemic is touching all of our lives, we're proud and glad that people around the world find joy in PetStory.</p>
-                <p class="text-about-help">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider <br> a gift to our <a href=".\donate.html">Emergency Support Fund</a>. </p>
+                <p class="text-about-help">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider a gift to our <a href=".\donate.html">Emergency Support Fund</a>. </p>
             </div>
             <div class="instruction-for-pay">
                 <div class="title-h3-container"><h3 class="title-h3-instruction">How it works</h3></div>
@@ -155,11 +160,13 @@
                         <div class="instruction-discription"><p class="pay-text">Pay with card</p></div>
                     </div>
                     <div class="instruction-box-arrow"><img src=".\img\fat-arrow.svg" alt=""></div>
+                    <div class="instruction-box-green-arrow"><img src=".\img\green_arrow.svg" alt=""></div>
                     <div class="instruction-box">
                         <div class="instruction-img"><img src=".\img\instruction-2.svg" alt=""></div>
                         <div class="instruction-discription"><p class="pay-text">Payment goes to the <br> zoo</p></div>
                     </div>
                     <div class="instruction-box-arrow"><img src=".\img\fat-arrow.svg" alt=""></div>
+                    <div class="instruction-box-green-arrow" id="second-green-arrow"><img src=".\img\green_arrow.svg" alt=""></div>
                     <div class="instruction-box">
                         <div class="instruction-img"><img src=".\img\instruction-3.svg" alt=""></div>
                         <div class="instruction-discription"><p class="pay-text">Your favorite animal <br> gets delicious dish</p></div>
@@ -251,7 +258,9 @@
     <footer class="footer">
         <div class="footer-warpper">
             <div class="footer-top">
-                <a class="footer-logo" href="#"><img class="site-logo-img" src=".\img\site-logo.png" alt="label"></a>
+                <a class="footer-logo" href="#"><img class="site-logo-img" id="logo-footer" src=".\img\site-logo.png" alt="label"></a>
+                <a class="footer-logo-320" href="#"><img class="site-logo-img" id="logo-footer-320" src=".\img\bamboo.svg" alt="label"></a>
+                <p class="text-logo">PetStory online</p>
                 <form class="subscribe-form">
                     <div class="subscribe-title">Subscribe to our news</div>
                     <div class="row-to-input"><input type="email" class="subscribe-gorm-input" placeholder="Enter your email"><button class="button-to-subscribe">Submit</button></div>
@@ -262,22 +271,22 @@
 
             <div class="footer-bot">
                 <ul class="link-list">
-                    <li class="social-link"><a href="https://ru-ru.facebook.com/">
+                    <li class="social-link"><a class="social-link-block" href="https://ru-ru.facebook.com/">
                         <div class="img-social"><img src=".\img\facebook-icon.svg" alt=""></div>
                         <div class="name-social">Facebook</div></a>
                     </li>
 
-                    <li class="social-link"><a href="https://twitter.com/?lang=ru">
+                    <li class="social-link"><a class="social-link-block" href="https://twitter.com/?lang=ru">
                         <div class="img-social"><img src=".\img\twitter-icon.svg" alt=""></div>
                         <div class="name-social">Twitter</div></a>
                     </li>
 
-                    <li class="social-link"><a href="https://www.instagram.com/">
+                    <li class="social-link"><a class="social-link-block" href="https://www.instagram.com/">
                         <div class="img-social"><img src=".\img\instagram-icon.svg" alt=""></div>
                         <div class="name-social">Instagram</div></a>
                     </li>
 
-                    <li class="social-link"><a href="https://www.youtube.com/">
+                    <li class="social-link"><a class="social-link-block" href="https://www.youtube.com/">
                         <div class="img-social"><img src=".\img\youtube-icon.svg" alt=""></div>
                         <div class="name-social">YouTube</div></a>
                     </li>
