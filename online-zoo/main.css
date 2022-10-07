@@ -1848,7 +1848,6 @@ opacity: 0.9;
         height: 358px;
         background-position: 37%;
         background-size: 223%;
-        margin-top: 25px;
     }
 
     .content__title {
@@ -1918,6 +1917,13 @@ opacity: 0.9;
 
     .wrapper {
         max-width: 600px;
+    }
+
+    .slider1000 {
+        display: none;
+    }
+    .slider640 {
+        display: block;
     }
 
 }
@@ -2158,9 +2164,7 @@ opacity: 0.9;
         width: 300px;
     }
 
-    .footer-mid {
-        
-    }
+    
 
     .footer-bot{
         width: 300px;
@@ -2201,7 +2205,7 @@ opacity: 0.9;
         height: 207px;
         background-position: 33%;
         background-size: 236% 90%;
-        margin-top: 28px;
+        
     }
 
     .content__text {
@@ -2305,6 +2309,7 @@ opacity: 0.9;
         height: 20px;
         width: 20px;
         background-size: 20px 20px;
+        
     }
     .donate__middle {
         margin-top: 50px;
