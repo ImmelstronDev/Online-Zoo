@@ -1,11 +1,8 @@
-
-
 const debtAmounts = document.querySelectorAll("input[name='debt-amount']");
 console.log(debtAmounts);
 
 const inputValueAmount = document.querySelector(".donate__number__input");
 console.log(inputValueAmount);
-
 
 const transferRadioBtnValueToAmount = function(evt){
     const debtAmount = evt.target
@@ -52,7 +49,3 @@ const checkRadioBtnHandler = function(evt){
 }
 
 inputValueAmount.addEventListener("input", checkRadioBtnHandler)
-
-
-
-
