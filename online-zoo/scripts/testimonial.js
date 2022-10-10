@@ -21,3 +21,4 @@ slider.addEventListener('change', () => {
     carousel.scrollLeft = carousel.scrollLeft + direction * testimonialsCardWidth
     console.log("direction: " + direction + ", scrollLeft: "  + carousel.scrollLeft)
 })
+// for github
